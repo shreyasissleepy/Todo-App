@@ -1,5 +1,6 @@
-import React, { useState } from 'react'
+
 import axios from 'axios'
+import { useState } from 'react'
 
 const Create = () => {
     const [task,setTask] = useState('')
@@ -12,7 +13,6 @@ const Create = () => {
             Status:status,
             Date:date,
         }).then(resp => {
-            alert('Request has been sent')
             console.log(resp)
         })
         .catch(err => console.log(err))

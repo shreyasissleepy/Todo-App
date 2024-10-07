@@ -1,4 +1,4 @@
-import React, { useState, useEffect, useSyncExternalStore } from 'react';
+import { useState, useEffect } from 'react';
 import axios from 'axios';
 
 const View = () => {
